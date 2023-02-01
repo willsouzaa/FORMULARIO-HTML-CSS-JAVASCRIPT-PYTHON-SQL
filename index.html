@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./my.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="content">
+<h1>Formulario</h1>
+<form action="">
+    <div>
+        <input type="text" placeholder="nome" class="inputs" >
+        <span class="span01">Nome deve ter no minimo 3 caracters</span>
+    </div>
+    <div>
+        <input type="text" placeholder="email" class="inputs" >
+        <span class="span01">Digite um email valido</span>
+    </div>
+    <div>
+        <input type="password" placeholder="senha" class="inputs" >
+        <span class="span01">Digite sua senha</span>
+    </div>
+    <div>
+        <input type="password" placeholder="repita sua senha" class="inputs" >
+        <span class="span01">Repita sua senha</span>
+    </div>
+
+        <textarea class="inputs" name="descriçao" id="descriçao" cols="25" rows="10" placeholder="Fale um pouco sobre voce..."></textarea>
+        <p>Sexo:</p>
+
+<div class="box-select">
+<input type="radio" id="m" value="m" name="sexo">
+<label for="m">masculino</label>
+</div>
+<div class="box-select">
+    <input type="radio" id="f" value="feminino" name="sexo">
+    <label for="f">feminino</label>
+    </div>
+    <div class="box-select">
+        <input type="radio" id="o" value="outro" name="sexo">
+        <label for="o">outro</label>
+        </div>
+        <p>Quais duas experiencias:</p>
+        <div class="box-select">
+            <input type="checkbox" name="experiencias" value="HTML" id="HTML">
+            <label for="HTML">HTML</label>
+        </div>
+        <div class="box-select">
+            <input type="checkbox" name="experiencias" value="CSS" id="CSS">
+            <label for="CSS">CSS</label>
+        </div>
+        <div class="box-select">
+            <input type="checkbox" name="experiencias" value="JS" id="JS">
+            <label for="JS">JAVASCRIPT</label>
+        </div>
+        <div class="box-select">
+            <input type="checkbox" name="experiencias" value="PYTHON" id="PYTHON">
+            <label for="PYTHON">PYTHON</label>
+        </div>
+
+        <button type="submit" >Enviar</button>
+</form>
+    </div>
+</body>
+
+</html>
