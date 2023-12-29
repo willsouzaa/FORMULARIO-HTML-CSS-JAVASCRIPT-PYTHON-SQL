@@ -1,90 +1,32 @@
-:root{
-    --color-white:#fff;
-  --colo-red:red;  
-  --colo-black:#181818;  
-  --colo-black1:#1e1e1e;  
-  --colo-violet:#9333ff;
-  --colo-indigo: indigo;   
-}
-:root{
+:root {
+    --color-white: #fff;
+    --colo-red: red;
+    --colo-black: #181818;
+    --colo-black1: #1e1e1e;
+    --colo-violet: #9333ff;
+    --colo-indigo: indigo;
     --background-image: url(./wallpaperbetter.com_3840x2160.jpg);
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background: var(--background-image);
+    background: var(--background-image) no-repeat center center fixed;
+    background-size: cover; /* Adicionando esta linha para cobrir a tela */
     color: var(--color-white);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vh;
+    height: 100vh;
+    margin: 0; /* Removendo margens padrão do corpo */
 }
-.content{
-    background-color: var(--colo-black); opacity: 0.95 ;
-    padding:30px;
+
+.content {
+    background-color: var(--colo-black);
+    opacity: 0.95;
+    padding: 30px;
     border-radius: 20px;
     min-width: 20%;
     overflow: auto;
 }
 
-h1{
-    margin-bottom: 16px;
-    text-align: center;
-}
-.content form{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-.span01{
-    display: none;
-}
-.inputs{
-    padding: 8px 5px;
-    outline: none;
-    border-radius: 5px;
-    background-color: var(--colo-black1);
-    border: 2px solid var(--colo-black1);
-    width: 100%;
-    box-sizing: border-box;
-}
-.inputs:focus{
-border-color: var(--colo-violet);
-transition: .3s;
-
-}
-.box-select{
-    display: flex;
-    justify-content:left;
-    gap: 16px;
-    font-family:Arial, Helvetica, sans-serif;
-
-}
-button[type="submit"]{
-    padding: 16px;
-    font-size: 20px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    margin-top: 16px;
-    cursor:pointer;
-    transition: .3s;
-}
-button[type="submit"]:hover{
-    background-color:rgb(184, 215, 241);
-}
-.content input{
-    color: #fff;
-}
-@media screen and(max-width: 600px) {
-    .box-select{
-        flex-direction: column;
-    }
-}
-
+/* Restante do seu código... */
